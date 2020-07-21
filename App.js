@@ -8,11 +8,13 @@ import {
     StatusBar,
 } from 'react-native';
 
+import Header from './components/header/header';
+
 
 const App = () => {
     return (
         <>
-
+            <Header></Header>
         </>
     );
 };

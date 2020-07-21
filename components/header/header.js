@@ -6,10 +6,17 @@ import {
     Platform,
 } from 'react-native';
 
-const Header = () => {
+const Header = () => (
+    <Text style={styles.header}>
+        Cryptocurrencies
+    </Text>
+)
 
-}
-
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    header: {
+        paddingTop: Platform.OS === 'ios' ? 50 : 10,
+        fontFamily: 'Lato-Black'
+    }
+});
 
 export default Header;
